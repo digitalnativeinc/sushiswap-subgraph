@@ -1,12 +1,21 @@
 {
-    "name": "user",
-    "license": "MIT",
-    "version": "1.0.0",
-    "author": "SushiSwap",
-    "scripts": {
-        "codegen": "graph codegen subgraph.yaml",
-        "build": "graph build subgraph.yaml",
-        "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ sushiswap/user subgraph.yaml",
-        "prepare": "mustache config/mainnet.json template.yaml > subgraph.yaml"
-    }
+  "name": "user",
+  "license": "MIT",
+  "version": "1.0.0",
+  "author": "SushiSwap",
+  "scripts": {
+    "codegen": "graph codegen subgraph.yaml",
+    "build": "graph build subgraph.yaml",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ sushiswap/user subgraph.yaml",
+    "prepare": "mustache config/mainnet.json template.yaml > subgraph.yaml",
+    "prepare:bsc": "echo",
+    "prepare:fantom": "echo",
+    "prepare:goerli": "echo",
+    "prepare:kovan": "echo",
+    "prepare:mainnet": "echo",
+    "prepare:matic": "echo",
+    "prepare:rinkeby": "echo",
+    "prepare:ropsten": "echo",
+    "prepare:xdai": "echo"
+  }
 }

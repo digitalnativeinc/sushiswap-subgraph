@@ -1,4 +1,4 @@
-import { Address, ethereum } from '@graphprotocol/graph-ts'
+import { Address, ethereum, log } from '@graphprotocol/graph-ts'
 import { BIG_DECIMAL_ZERO, BIG_INT_ZERO, FACTORY_ADDRESS, WHITELIST } from 'const'
 
 import { Pair } from '../../generated/schema'

@@ -5,8 +5,10 @@ import {
   Harvest,
   LogPoolAddition,
   LogSetPool,
-  LogUpdatePool
-} from '../../generated/MasterChefV2/MasterChefV2'
+  LogUpdatePool,
+  LogUpdateReward,
+  OwnershipTransferred
+} from '../../generated/MasterPool/MasterPool'
 
 import { Address, BigDecimal, BigInt, dataSource, ethereum, log } from '@graphprotocol/graph-ts'
 import {
@@ -29,7 +31,7 @@ import {
   updateRewarder
 } from '../entities'
 
-import { ERC20 as ERC20Contract } from '../../generated/MasterChefV2/ERC20'
+import { ERC20 as ERC20Contract } from '../../generated/MasterPool/ERC20'
 
 export function logPoolAddition(event: LogPoolAddition): void {
   log.info('[MasterChefV2] Log Pool Addition {} {} {} {}', [
@@ -165,4 +167,20 @@ export function harvest(event: Harvest): void {
   user.rewardDebt = accumulatedSushi
   user.sushiHarvested = user.sushiHarvested.plus(event.params.amount)
   user.save()
+}
+
+export function logUpdateReward(event: LogUpdateReward): void {
+  log.info('[MasterChefV2] update reward per block {}', [event.params.reward.toString()])
+  const masterChef = getMasterChef(event.block)
+
+  masterChef.sushiPerBlock = event.params.reward
+  masterChef.save()
+}
+
+export function ownershipTransferred(event: OwnershipTransferred): void {
+  log.info('Ownership transfered from previous owner: {} to new owner: {}', [
+    event.params.previousOwner.toHex(),
+    event.params.newOwner.toHex(),
+  ])
+  getMasterChef(event.block)
 }

@@ -58,24 +58,24 @@ export const PAIR_BORROW = "borrow";
 
 export const PAIR_REPAY = "repay";
 
-export const FACTORY_ADDRESS = Address.fromString("0xc35dadb65012ec5796536bd9864ed8773abc74c4");
+export const FACTORY_ADDRESS = Address.fromString("0xb10db5fc1c2ca4d72e6ebe1a9494b61fa3b71385");
 
 export const MASTER_CHEF_ADDRESS = Address.fromString(
-  "0x0000000000000000000000000000000000000000"
+  "0x80c7dd17b01855a6d2347444a0fcc36136a314de"
 );
 
 export const MASTER_CHEF_V2_ADDRESS = Address.fromString(
   "0xef0881ec094552b2e128cf945ef17a6752b4ec5d"
 );
 
-export const SUSHI_BAR_ADDRESS = Address.fromString("0x0000000000000000000000000000000000000000");
+export const SUSHI_BAR_ADDRESS = Address.fromString("0x1be211d8da40bc0ae8719c6663307bfc987b1d6c");
 
 export const SUSHI_MAKER_ADDRESS = Address.fromString(
-  "0x0000000000000000000000000000000000000000"
+  "0x1b9d177ccdea3c79b6c8f40761fc8dc9d0500eaa"
 );
 
 export const SUSHI_TOKEN_ADDRESS = Address.fromString(
-  "0x39cf1bd5f15fb22ec3d9ff86b0727afc203427cc"
+  "0x0769fd68dfb93167989c6f7254cd0d766fb2841f"
 );
 
 export const SUSHI_USDT_PAIR_ADDRESS = Address.fromString(
@@ -96,32 +96,32 @@ export const SUSHI_DISTRIBUTOR_ADDRESS = Address.fromString(
 
 export const USDC_WETH_PAIR = "0x0000000000000000000000000000000000000000";
 
-export const DAI_WETH_PAIR = "0x034c1b19dab61b5de448efc1e10a2e592725c893";
+export const DAI_WETH_PAIR = "0x524bc643e91989c78f67bd7238f0757370fce495";
 
-export const USDT_WETH_PAIR = "0x47f1c2a9c9027a10c3b13d1c40dd976c5014339b";
+export const USDT_WETH_PAIR = "0x0000000000000000000000000000000000000000";
 
 export const SUSHI_USDT_PAIR = "0x0000000000000000000000000000000000000000";
 
 // minimum liquidity required to count towards tracked volume for pairs with small # of Lps
 export const MINIMUM_USD_THRESHOLD_NEW_PAIRS = BigDecimal.fromString(
-  "3000"
+  "300"
 );
 
 // minimum liquidity for price to get tracked
 export const MINIMUM_LIQUIDITY_THRESHOLD_ETH = BigDecimal.fromString(
-  "50"
+  "0.01"
 );
 
-export const WETH_ADDRESS = Address.fromString("0xf20d962a6c8f70c731bd838a3a388d7d48fa6e15");
+export const WETH_ADDRESS = Address.fromString("0xc778417e063141139fce010982780140aa0cd5ab");
 
 export const SUSHISWAP_WETH_USDT_PAIR_ADDRESS = Address.fromString(
   "0x0000000000000000000000000000000000000000"
 );
 
-export const USDT_ADDRESS = Address.fromString("0xde3a24028580884448a5397872046a019649b084");
+export const USDT_ADDRESS = Address.fromString("0x0000000000000000000000000000000000000000");
 
 export const UNISWAP_FACTORY_ADDRESS = Address.fromString(
-  "0x0000000000000000000000000000000000000000"
+  "0xb10db5fc1c2ca4d72e6ebe1a9494b61fa3b71385"
 );
 
 export const UNISWAP_WETH_USDT_PAIR_ADDRESS = Address.fromString(
@@ -156,15 +156,15 @@ export const ALCX_REWARDER = Address.fromString('0x7519c93fc5073e15d89131fd38118
 
 export const LIDO_REWARDER = Address.fromString('0x75ff3dd673ef9fc459a52e1054db5df2a1101212')
 
-export const NATIVE = Address.fromString("0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7");
+export const NATIVE = Address.fromString("0xc778417e063141139fce010982780140aa0cd5ab");
 
 export const USDC = "0x0000000000000000000000000000000000000000";
 
-export const USDT = "0xde3a24028580884448a5397872046a019649b084";
+export const USDT = "0x0000000000000000000000000000000000000000";
 
-export const DAI = "0xba7deebbfc5fa1100fb055a87773e1e99cd3507a";
+export const DAI = "0xc7ad46e0b8a400bb3c915120d284aafba8fc4735";
 
-export const WHITELIST: string[] = "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7,0x408d4cd0adb7cebd1f1a1c33a0ba2098e1295bab,0xf20d962a6c8f70c731bd838a3a388d7d48fa6e15,0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab,0xde3a24028580884448a5397872046a019649b084,0xba7deebbfc5fa1100fb055a87773e1e99cd3507a,0x130966628846bfd36ff31a822705796e8cb8c18d".split(",");
+export const WHITELIST: string[] = "0xc778417e063141139fce010982780140aa0cd5ab,0xc7ad46e0b8a400bb3c915120d284aafba8fc4735".split(",");
 
 // export const WHITELIST: string[] = [
 //   "0xcf664087a5bb0237a0bad6742852ec6c8d69a27a",

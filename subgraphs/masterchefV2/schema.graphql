@@ -7,7 +7,11 @@ type MasterChef @entity {
 
   #sushiPerBlock: BgInt! not needed till fully migrated over
   totalAllocPoint: BigInt!
+  sushiPerBlock: BigInt!
 
+  # Migrator
+  migrator: Bytes!
+  
   pools: [Pool!] @derivedFrom(field: "masterChef")
   poolCount: BigInt!
 

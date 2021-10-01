@@ -176,14 +176,13 @@ export function findEthPerToken(token: Token): BigDecimal {
   }
 
   const whitelist = token.whitelistPairs
-
+  
   for (let i = 0; i < whitelist.length; ++i) {
     const pairAddress = whitelist[i]
     const pair = Pair.load(pairAddress)
 
     if (pair.token0 == token.id && pair.reserveETH.gt(MINIMUM_LIQUIDITY_THRESHOLD_ETH)) {
       const token1 = Token.load(pair.token1)
-
       return pair.token1Price.times(token1.derivedETH as BigDecimal) // return token1 per our token * Eth per token 1
     }
 
