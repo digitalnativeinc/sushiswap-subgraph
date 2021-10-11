@@ -58,24 +58,24 @@ export const PAIR_BORROW = "borrow";
 
 export const PAIR_REPAY = "repay";
 
-export const FACTORY_ADDRESS = Address.fromString("0xb10db5fc1c2ca4d72e6ebe1a9494b61fa3b71385");
+export const FACTORY_ADDRESS = Address.fromString("0xF659492744608B595670c1508aa0F5b92B84B94d");
 
 export const MASTER_CHEF_ADDRESS = Address.fromString(
-  "0x80c7dd17b01855a6d2347444a0fcc36136a314de"
+  "0x0000000000000000000000000000000000000000"
 );
 
 export const MASTER_CHEF_V2_ADDRESS = Address.fromString(
   "0xef0881ec094552b2e128cf945ef17a6752b4ec5d"
 );
 
-export const SUSHI_BAR_ADDRESS = Address.fromString("0x1be211d8da40bc0ae8719c6663307bfc987b1d6c");
+export const SUSHI_BAR_ADDRESS = Address.fromString("0x0000000000000000000000000000000000000000");
 
 export const SUSHI_MAKER_ADDRESS = Address.fromString(
-  "0x1b9d177ccdea3c79b6c8f40761fc8dc9d0500eaa"
+  "0x0000000000000000000000000000000000000000"
 );
 
 export const SUSHI_TOKEN_ADDRESS = Address.fromString(
-  "0x0769fd68dfb93167989c6f7254cd0d766fb2841f"
+  "0xC8aEEDb09f4d90d59eE47fEd8c70D10Fd267b2ab"
 );
 
 export const SUSHI_USDT_PAIR_ADDRESS = Address.fromString(
@@ -96,7 +96,7 @@ export const SUSHI_DISTRIBUTOR_ADDRESS = Address.fromString(
 
 export const USDC_WETH_PAIR = "0x0000000000000000000000000000000000000000";
 
-export const DAI_WETH_PAIR = "0x524bc643e91989c78f67bd7238f0757370fce495";
+export const DAI_WETH_PAIR = "0x5ea23619fe6d692963e86574d9d1c798f4fc1626";
 
 export const USDT_WETH_PAIR = "0x0000000000000000000000000000000000000000";
 
@@ -121,7 +121,7 @@ export const SUSHISWAP_WETH_USDT_PAIR_ADDRESS = Address.fromString(
 export const USDT_ADDRESS = Address.fromString("0x0000000000000000000000000000000000000000");
 
 export const UNISWAP_FACTORY_ADDRESS = Address.fromString(
-  "0xb10db5fc1c2ca4d72e6ebe1a9494b61fa3b71385"
+  "0xF659492744608B595670c1508aa0F5b92B84B94d"
 );
 
 export const UNISWAP_WETH_USDT_PAIR_ADDRESS = Address.fromString(
@@ -164,7 +164,7 @@ export const USDT = "0x0000000000000000000000000000000000000000";
 
 export const DAI = "0xc7ad46e0b8a400bb3c915120d284aafba8fc4735";
 
-export const WHITELIST: string[] = "0xc778417e063141139fce010982780140aa0cd5ab,0xc7ad46e0b8a400bb3c915120d284aafba8fc4735".split(",");
+export const WHITELIST: string[] = "0xc778417e063141139fce010982780140aa0cd5ab,0xc7ad46e0b8a400bb3c915120d284aafba8fc4735,0xC8aEEDb09f4d90d59eE47fEd8c70D10Fd267b2ab".split(",");
 
 // export const WHITELIST: string[] = [
 //   "0xcf664087a5bb0237a0bad6742852ec6c8d69a27a",

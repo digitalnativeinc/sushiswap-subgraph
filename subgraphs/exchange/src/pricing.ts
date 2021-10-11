@@ -1,6 +1,6 @@
 import {
-  ADDRESS_ZERO,
-  BIG_DECIMAL_1E18,
+  // ADDRESS_ZERO,
+  // BIG_DECIMAL_1E18,
   BIG_DECIMAL_ONE,
   BIG_DECIMAL_ZERO,
   DAI,
@@ -8,14 +8,14 @@ import {
   FACTORY_ADDRESS,
   MINIMUM_LIQUIDITY_THRESHOLD_ETH,
   NATIVE,
-  SUSHI_USDT_PAIR,
+  // SUSHI_USDT_PAIR,
   USDC,
   USDC_WETH_PAIR,
   USDT,
   USDT_WETH_PAIR,
-  WHITELIST,
+  // WHITELIST,
 } from 'const'
-import { Address, BigDecimal, BigInt, dataSource, ethereum, log } from '@graphprotocol/graph-ts'
+import { Address, BigDecimal, ethereum, log } from '@graphprotocol/graph-ts'
 import { Pair, Token } from '../generated/schema'
 
 import { Factory as FactoryContract } from '../generated/templates/Pair/Factory'
@@ -25,15 +25,16 @@ import { Pair as PairContract } from '../generated/templates/Pair/Pair'
 
 export const factoryContract = FactoryContract.bind(FACTORY_ADDRESS)
 
-export function getSushiPrice(): BigDecimal {
-  const pair = Pair.load(SUSHI_USDT_PAIR)
+// unused
+// export function getSushiPrice(): BigDecimal {
+//   const pair = Pair.load(SUSHI_USDT_PAIR)
 
-  if (pair) {
-    return pair.token1Price
-  }
+//   if (pair) {
+//     return pair.token1Price
+//   }
 
-  return BIG_DECIMAL_ZERO
-}
+//   return BIG_DECIMAL_ZERO
+// }
 
 export function getEthPrice(block: ethereum.Block = null): BigDecimal {
   // TODO: We can can get weighted averages, but this will do for now.
@@ -176,7 +177,7 @@ export function findEthPerToken(token: Token): BigDecimal {
   }
 
   const whitelist = token.whitelistPairs
-  
+
   for (let i = 0; i < whitelist.length; ++i) {
     const pairAddress = whitelist[i]
     const pair = Pair.load(pairAddress)
